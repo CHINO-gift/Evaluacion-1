@@ -30,9 +30,16 @@ padding: 10px;
 border-radius: 6px;
 }
 
-aside nav a:hover {
-background: #F2B705;
-color: black;
+.usuario aside nav a:hover {
+background: #3498db;
+}
+
+.coach aside nav a:hover {
+background: #2ecc71;
+}
+
+.admin aside nav a:hover {
+background: #8e44ad;
 }
 
 .contenido {
@@ -47,6 +54,16 @@ justify-content: space-between;
 align-items: center;
 padding: 20px;
 color: white;
+}
+
+.header-left {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.header-left img {
+height: 40px;
 }
 
 .usuario header {
@@ -64,10 +81,9 @@ background: #8e44ad;
 button {
 background: #F2B705;
 border: none;
-padding: 10px 15px;
+padding: 8px 12px;
 cursor: pointer;
 border-radius: 6px;
-transition: 0.3s;
 }
 
 button:hover {
@@ -76,17 +92,9 @@ background: #d99c04;
 
 main.grid {
 display: grid;
-grid-template-columns: 1fr 2fr 1fr;
-grid-template-rows: auto auto;
+grid-template-columns: 1fr 1fr 1fr;
 gap: 20px;
 padding: 20px;
-}
-
-main {
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
 }
 
 .card {
@@ -94,40 +102,6 @@ background: white;
 padding: 20px;
 border-radius: 12px;
 box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-}
-
-.perfil {
-grid-column: 1;
-grid-row: 1 / span 2;
-}
-
-.progreso {
-grid-column: 2;
-grid-row: 1;
-text-align: center;
-}
-
-.circle {
-width: 120px;
-height: 120px;
-border-radius: 50%;
-background: #3498db;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 24px;
-margin: auto;
-}
-
-.clases {
-grid-column: 3;
-grid-row: 1;
-}
-
-.tabla {
-grid-column: 2 / span 2;
-grid-row: 2;
 }
 
 h1, h2, h3 {
@@ -155,12 +129,6 @@ gap: 15px;
 
 .logo-container img {
 height: 60px;
-width: auto;
-}
-
-.logo-container h1 {
-margin: 0;
-font-size: 24px;
 }
 
 nav a {
@@ -188,26 +156,10 @@ margin-bottom: 50px;
 .hero h2 {
 font-size: 36px;
 color: #2E1A47;
-margin-bottom: 10px;
 }
 
 .hero p {
-font-size: 18px;
 color: #555;
-}
-
-.hero button {
-margin-top: 15px;
-padding: 12px 20px;
-font-size: 16px;
-background: #F2B705;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-}
-
-.hero button:hover {
-background: #d99c04;
 }
 
 .cards {
@@ -219,11 +171,6 @@ flex-wrap: wrap;
 
 .cards .card {
 width: 280px;
-text-align: center;
-}
-
-.cards .card h3 {
-color: #2E1A47;
 }
 
 .extra {
@@ -245,18 +192,11 @@ text-align: center;
 
 .extra-card h3 {
 color: #F2B705;
-font-size: 28px;
-margin: 0;
 }
 
 .vision {
 margin-top: 60px;
 text-align: center;
-}
-
-.vision h2 {
-color: #2E1A47;
-margin-bottom: 10px;
 }
 
 footer {
@@ -276,8 +216,8 @@ background: linear-gradient(135deg, #2E1A47, #8e44ad);
 }
 
 .auth-container {
-width: 100%;
 max-width: 400px;
+width: 100%;
 }
 
 .auth-card {
@@ -291,18 +231,8 @@ gap: 15px;
 text-align: center;
 }
 
-.auth-logo {
-text-align: center;
-margin-bottom: 10px;
-}
-
 .auth-logo img {
 height: 70px;
-}
-
-.auth-logo h2 {
-margin: 5px 0;
-color: #2E1A47;
 }
 
 .auth-card form {
@@ -315,24 +245,9 @@ gap: 15px;
 padding: 10px;
 border-radius: 6px;
 border: 1px solid #ccc;
-font-size: 14px;
 }
 
 .auth-card input:focus {
 outline: none;
 border-color: #8e44ad;
-}
-
-.auth-card button {
-margin-top: 10px;
-}
-
-.auth-card p {
-font-size: 14px;
-}
-
-.auth-card a {
-color: #8e44ad;
-text-decoration: none;
-font-weight: bold;
 }

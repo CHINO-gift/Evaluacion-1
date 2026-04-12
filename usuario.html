@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Usuario</title>
-<link rel="stylesheet" href="css/styles.css">
+<title>Dashboard Usuario</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="usuario">
 
@@ -13,48 +13,46 @@
 <h2>SportClub</h2>
 <nav>
 <a href="#">Inicio</a>
-<a href="#">Clases</a>
 <a href="#">Reservas</a>
-<a href="#">Mi Progreso</a>
+<a href="#">Perfil</a>
 </nav>
 </aside>
 
 <div class="contenido">
 
 <header>
-<h1>Dashboard Usuario</h1>
+<div class="header-left">
+<img src="img/logo.png">
+<h2>Usuario</h2>
+</div>
+
 <div>
-<button>Editar Perfil</button>
+<button>Editar perfil</button>
 <button>Cerrar sesión</button>
 </div>
 </header>
 
 <main class="grid">
 
-<section class="perfil card">
-<h3>Mi Perfil</h3>
+<section class="card perfil">
+<h3>Mi Información</h3>
 <p>Nombre: Juan Pérez</p>
-<p>Email: juan@email.com</p>
-<p>Objetivo: Fitness</p>
+<p>Correo: juan@email.com</p>
+<p>Interés: Fitness</p>
 </section>
 
-<section class="progreso card">
-<h3>Progreso</h3>
-<div class="circle">75%</div>
+<section class="card reservas">
+<h3>Mis Reservas</h3>
+<p>Crossfit – Lunes 18:00</p>
+<p>Spinning – Miércoles 19:00</p>
+<p>Yoga – Viernes 17:00</p>
 </section>
 
-<section class="clases card">
+<section class="card clases">
 <h3>Clases Disponibles</h3>
+<p>Yoga <button>Reservar</button></p>
+<p>Funcional <button>Reservar</button></p>
 <p>Spinning <button>Reservar</button></p>
-<p>CrossFit <button>Reservar</button></p>
-<p>Viernes <button>Reservar</button></p>
-</section>
-
-<section class="tabla card">
-<h3>Clases</h3>
-<p>Spinning - Lunes 18:00</p>
-<p>CrossFit - Miércoles 10:00</p>
-<p>HIIT - Sábado 10:00</p>
 </section>
 
 </main>
