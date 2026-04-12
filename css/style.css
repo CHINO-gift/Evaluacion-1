@@ -1,0 +1,52 @@
+body {
+font-family: Arial;
+margin: 0;
+background: #f4f4f4;
+}
+
+header {
+padding: 15px;
+color: white;
+}
+
+.usuario header {
+background: #3498db;
+}
+
+.coach header {
+background: #2ecc71;
+}
+
+.admin header {
+background: #8e44ad;
+}
+
+main {
+padding: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+section {
+background: white;
+padding: 15px;
+border-radius: 10px;
+}
+
+button {
+background: #F2B705;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+
+a {
+display: block;
+margin-top: 10px;
+}
+
+section:hover {
+transform: scale(1.02);
+transition: 0.2s;
+}
