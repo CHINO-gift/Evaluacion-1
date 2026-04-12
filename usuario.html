@@ -14,7 +14,7 @@
 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
 <div class="d-flex align-items-center gap-3">
 <img src="img/logo.png" alt="Logo SportClub" class="logo-img">
-<h1 class="h3 mb-0">Usuario</h1>
+<h1 class="h3 mb-0">Panel de Usuario</h1>
 </div>
 <div class="d-flex gap-2">
 <button type="button" class="btn btn-gold">Editar Perfil</button>
@@ -35,60 +35,116 @@
 <a class="nav-link active" href="#">Inicio</a>
 </li>
 <li class="nav-item">
+<a class="nav-link" href="#">Clases</a>
+</li>
+<li class="nav-item">
 <a class="nav-link" href="#">Reservas</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Perfil</a>
+<a class="nav-link" href="#">Mi Progreso</a>
 </li>
 </ul>
 </div>
 </div>
 </nav>
 
-<main class="container py-4">
+<main class="container-fluid py-4">
 <h2 class="mb-4">Bienvenido a SportClub</h2>
 
 <div class="row g-4">
 
-<div class="col-lg-4">
-<div class="card dashboard-card h-100">
+<div class="col-lg-3">
+<div class="card dashboard-card h-100 sketch-card">
 <div class="card-body">
-<h3 class="h5 mb-3">Mi Información</h3>
-<p><strong>Nombre:</strong> Juan Pérez</p>
-<p><strong>Correo:</strong> juan@email.com</p>
-<p><strong>Interés:</strong> Fitness</p>
+<h3 class="h5 mb-3">Mi Perfil</h3>
+
+<div class="d-flex gap-3 align-items-start mb-4">
+<div class="avatar-sketch"></div>
+<div class="flex-grow-1">
+<p class="mb-1"><strong>Nombre:</strong></p>
+<div class="fake-line mb-3"></div>
+<p class="mb-1"><strong>Email:</strong></p>
+<div class="fake-line"></div>
+</div>
+</div>
+
+<p class="mb-2"><strong>Objetivos Personales:</strong></p>
+<div class="fake-line mb-2"></div>
+<div class="fake-line mb-2"></div>
+<div class="fake-line"></div>
 </div>
 </div>
 </div>
 
-<div class="col-lg-4">
-<div class="card dashboard-card h-100">
+<div class="col-lg-5">
+<div class="card dashboard-card sketch-card mb-4">
 <div class="card-body">
-<h3 class="h5 mb-3">Mis Reservas</h3>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">Crossfit - Lunes 18:00</li>
-<li class="list-group-item">Spinning - Miércoles 19:00</li>
-<li class="list-group-item">Yoga - Viernes 17:00</li>
-</ul>
+<h3 class="h5 mb-3">Progreso</h3>
+
+<div class="row align-items-center g-3">
+<div class="col-md-6 text-center">
+<div class="progress-circle mx-auto">
+<div class="progress-circle-inner">Avance</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="border rounded p-3 bg-light-subtle">
+<h4 class="h6 mb-3">Avance</h4>
+<div class="fake-line mb-2"></div>
+<div class="fake-line mb-2"></div>
+<div class="fake-line mb-2"></div>
+<div class="fake-line"></div>
+</div>
+</div>
 </div>
 </div>
 </div>
 
-<div class="col-lg-4">
-<div class="card dashboard-card h-100">
+<div class="card dashboard-card sketch-card">
 <div class="card-body">
 <h3 class="h5 mb-3">Clases Disponibles</h3>
-<div class="d-grid gap-3">
-<div class="border rounded p-3 d-flex justify-content-between align-items-center">
-<span>Yoga</span>
-<button type="button" class="btn btn-gold btn-sm">Reservar</button>
+
+<div class="table-responsive">
+<table class="table align-middle mb-0">
+<tbody>
+<tr>
+<td>Spinning</td>
+<td>Lunes / 18:00 / 10:00</td>
+<td>Boxeo</td>
+<td>Sábado</td>
+<td><button type="button" class="btn btn-gold btn-sm">Reservar</button></td>
+</tr>
+<tr>
+<td>CrossFit</td>
+<td>Miércoles / 10:00</td>
+<td>HIIT</td>
+<td>10:00</td>
+<td><button type="button" class="btn btn-gold btn-sm">Reservar</button></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="border rounded p-3 d-flex justify-content-between align-items-center">
-<span>Funcional</span>
-<button type="button" class="btn btn-gold btn-sm">Reservar</button>
 </div>
-<div class="border rounded p-3 d-flex justify-content-between align-items-center">
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="card dashboard-card sketch-card">
+<div class="card-body">
+<h3 class="h5 mb-3">Clases Disponibles</h3>
+
+<div class="d-flex flex-column gap-3">
+<div class="d-flex justify-content-between align-items-center border-bottom pb-2">
 <span>Spinning</span>
+<button type="button" class="btn btn-gold btn-sm">Reservar</button>
+</div>
+<div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+<span>CrossFit</span>
+<button type="button" class="btn btn-gold btn-sm">Reservar</button>
+</div>
+<div class="d-flex justify-content-between align-items-center">
+<span>Viernes</span>
 <button type="button" class="btn btn-gold btn-sm">Reservar</button>
 </div>
 </div>

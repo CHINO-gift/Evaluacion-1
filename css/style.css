@@ -81,3 +81,67 @@ background-color: #58d68d;
 .admin-nav {
 background-color: #a569bd;
 }
+
+.sketch-card {
+border: 1px solid #d9e2ec;
+}
+
+.avatar-sketch {
+width: 90px;
+height: 90px;
+border-radius: 50%;
+border: 4px solid #3498db;
+background: linear-gradient(135deg, #dbeeff, #f8fbff);
+flex-shrink: 0;
+}
+
+.fake-line {
+height: 12px;
+background-color: #dbeeff;
+border-radius: 999px;
+width: 100%;
+}
+
+.progress-circle {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background: conic-gradient(#3498db 0deg 270deg, #dbeeff 270deg 360deg);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.progress-circle-inner {
+width: 95px;
+height: 95px;
+border-radius: 50%;
+background: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+color: #2E1A47;
+text-align: center;
+}
+
+.table td {
+vertical-align: middle;
+}
+
+@media (max-width: 991.98px) {
+.logo-img {
+height: 52px;
+}
+
+.progress-circle {
+width: 130px;
+height: 130px;
+}
+
+.progress-circle-inner {
+width: 82px;
+height: 82px;
+font-size: 14px;
+}
+}
