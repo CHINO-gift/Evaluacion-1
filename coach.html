@@ -3,43 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <title>Coach</title>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="coach">
-<div class="container">
-<aside>
-<h2>SportClub</h2>
-<nav>
+
+<div class="dashboard-layout">
+
+<header class="dashboard-header">
+<div class="dashboard-logo">
+<img src="img/logo.png" alt="Logo SportClub">
+<h1>Coach</h1>
+</div>
+<div class="header-buttons">
+<button>Editar Perfil</button>
+<button>Cerrar Sesión</button>
+</div>
+</header>
+
+<nav class="dashboard-nav">
 <a href="#">Inicio</a>
 <a href="#">Alumnos</a>
 <a href="#">Clases</a>
+<a href="#">Mi Horario</a>
 </nav>
-</aside>
-<div class="contenido">
-<header>
-<h1>Coach</h1>
+
+<main class="dashboard-main">
+<h2 class="dashboard-bienvenida">Panel de Entrenador</h2>
+
+<section class="coach-grid">
+
+<div class="panel alumnos-panel">
+<h3>Mis Alumnos</h3>
+<div class="alumno-item">
 <div>
-<button>Editar Perfil</button>
-<button>Cerrar sesión</button>
+<p><strong>Juan Pérez</strong></p>
+<p>juan@email.com</p>
 </div>
-</header>
-<main>
-<section class="card">
-<h3>Alumnos</h3>
-<p>Juan</p>
-<p>María</p>
-</section>
-<section class="card">
-<h3>Clases</h3>
-<p>Funcional Martes 19:00</p>
-</section>
-<section class="card">
-<h3>Horario</h3>
-<p>Lunes 18:00</p>
-<p>Miércoles 11:00</p>
+<button>Ver Progreso</button>
+</div>
+<div class="alumno-item">
+<div>
+<p><strong>María Soto</strong></p>
+<p>maria@email.com</p>
+</div>
+<button>Ver Progreso</button>
+</div>
+<div class="alumno-item">
+<div>
+<p><strong>Carlos Díaz</strong></p>
+<p>carlos@email.com</p>
+</div>
+<button>Ver Progreso</button>
+</div>
+</div>
+
+<div class="panel coach-horario-panel">
+<h3>Mi Horario</h3>
+<div class="tabla-horario">
+<div class="fila-horario encabezado">
+<span>Lunes</span>
+<span>Martes</span>
+<span>Miércoles</span>
+<span>Jueves</span>
+<span>Viernes</span>
+</div>
+<div class="fila-horario">
+<span>Spinning</span>
+<span>18:00</span>
+<span>Spinning</span>
+<span>10:00</span>
+<span>Boxeo</span>
+</div>
+<div class="fila-horario">
+<span>Miércoles</span>
+<span>11:00</span>
+<span>CrossFit</span>
+<span>11:00</span>
+<span>Boxeo</span>
+</div>
+</div>
+</div>
+
+<div class="panel coach-clases-panel">
+<h3>Clases Asignadas</h3>
+<div class="clase-item">
+<span>Funcional</span>
+<button>Ver Detalle</button>
+</div>
+<div class="clase-item">
+<span>Spinning</span>
+<button>Ver Detalle</button>
+</div>
+<div class="clase-item">
+<span>Boxeo</span>
+<button>Ver Detalle</button>
+</div>
+</div>
+
 </section>
 </main>
+
 </div>
-</div>
+
 </body>
 </html>

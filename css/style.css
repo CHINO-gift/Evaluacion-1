@@ -293,9 +293,49 @@ color: white;
 color: #F2B705;
 }
 
+.coach .dashboard-header {
+background: #2ecc71;
+}
+
+.coach .dashboard-nav {
+background: #58d68d;
+}
+
+.coach .dashboard-nav a {
+color: white;
+}
+
+.coach .dashboard-nav a:hover {
+color: #F2B705;
+}
+
+.admin .dashboard-header {
+background: #8e44ad;
+}
+
+.admin .dashboard-nav {
+background: #a569bd;
+}
+
+.admin .dashboard-nav a {
+color: white;
+}
+
+.admin .dashboard-nav a:hover {
+color: #F2B705;
+}
+
 .usuario-grid {
 display: grid;
 grid-template-columns: 1fr 1.4fr 1fr;
+grid-template-rows: auto auto;
+gap: 20px;
+align-items: stretch;
+}
+
+.coach-grid {
+display: grid;
+grid-template-columns: 1fr 2fr;
 grid-template-rows: auto auto;
 gap: 20px;
 align-items: stretch;
@@ -306,13 +346,27 @@ background: white;
 border-radius: 14px;
 padding: 18px;
 box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-border: 2px solid #d9e7f5;
 }
 
 .panel h3 {
 margin-top: 0;
 margin-bottom: 16px;
+}
+
+.usuario .panel {
+border: 2px solid #d9e7f5;
+}
+
+.usuario .panel h3 {
 color: #1f5f99;
+}
+
+.coach .panel {
+border: 2px solid #d8f3e5;
+}
+
+.coach .panel h3 {
+color: #1e8449;
 }
 
 .perfil-panel {
@@ -443,6 +497,10 @@ border-bottom: 1px solid #e5eef7;
 gap: 10px;
 }
 
+.coach .clase-item {
+border-bottom: 1px solid #e2f3ea;
+}
+
 .clase-item:last-child {
 border-bottom: none;
 }
@@ -469,8 +527,65 @@ background: #f8fbff;
 border: 1px solid #d9e7f5;
 }
 
+.alumnos-panel {
+grid-column: 1;
+grid-row: 1 / span 2;
+min-height: 360px;
+}
+
+.alumno-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 14px;
+padding: 14px 0;
+border-bottom: 1px solid #e2f3ea;
+}
+
+.alumno-item:last-child {
+border-bottom: none;
+}
+
+.alumno-item p {
+margin: 4px 0;
+}
+
+.coach-horario-panel {
+grid-column: 2;
+grid-row: 1;
+}
+
+.tabla-horario {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.fila-horario {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10px;
+padding: 12px;
+background: #f4fcf7;
+border: 1px solid #d8f3e5;
+border-radius: 10px;
+text-align: center;
+}
+
+.fila-horario.encabezado {
+background: #2ecc71;
+color: white;
+font-weight: bold;
+}
+
+.coach-clases-panel {
+grid-column: 2;
+grid-row: 2;
+}
+
 @media (max-width: 1100px) {
-.usuario-grid {
+.usuario-grid,
+.coach-grid {
 grid-template-columns: 1fr;
 grid-template-rows: auto;
 }
@@ -478,12 +593,16 @@ grid-template-rows: auto;
 .perfil-panel,
 .progreso-panel,
 .clases-laterales,
-.clases-tabla {
+.clases-tabla,
+.alumnos-panel,
+.coach-horario-panel,
+.coach-clases-panel {
 grid-column: auto;
 grid-row: auto;
 }
 
-.fila-clase {
+.fila-clase,
+.fila-horario {
 grid-template-columns: 1fr;
 }
 }
@@ -505,7 +624,10 @@ justify-content: center;
 padding: 16px;
 }
 
-.progreso-contenido {
+.progreso-contenido,
+.alumno-item,
+.clase-item {
 flex-direction: column;
+align-items: flex-start;
 }
 }
