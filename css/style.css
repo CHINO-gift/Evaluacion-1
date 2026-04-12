@@ -341,6 +341,13 @@ gap: 20px;
 align-items: stretch;
 }
 
+.admin-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+align-items: stretch;
+}
+
 .panel {
 background: white;
 border-radius: 14px;
@@ -367,6 +374,14 @@ border: 2px solid #d8f3e5;
 
 .coach .panel h3 {
 color: #1e8449;
+}
+
+.admin .panel {
+border: 2px solid #e8d6f5;
+}
+
+.admin .panel h3 {
+color: #6c3483;
 }
 
 .perfil-panel {
@@ -583,9 +598,75 @@ grid-column: 2;
 grid-row: 2;
 }
 
+.usuarios-panel {
+grid-column: 1;
+grid-row: 1 / span 2;
+min-height: 320px;
+}
+
+.usuario-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 0;
+border-bottom: 1px solid #eee;
+gap: 10px;
+}
+
+.usuario-item:last-child {
+border-bottom: none;
+}
+
+.stats-panel {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.stat-box {
+background: #f5eef8;
+padding: 18px;
+border-radius: 10px;
+text-align: center;
+border: 1px solid #e8d6f5;
+}
+
+.stat-box p {
+margin: 0 0 10px 0;
+}
+
+.stat-box h2 {
+margin: 0;
+color: #6c3483;
+}
+
+.control-panel {
+display: flex;
+gap: 14px;
+}
+
+.control-card {
+flex: 1;
+background: #f5eef8;
+padding: 18px;
+border-radius: 10px;
+text-align: center;
+border: 1px solid #e8d6f5;
+}
+
+.control-card p {
+margin: 0 0 10px 0;
+}
+
+.control-card h2 {
+margin: 0;
+color: #6c3483;
+}
+
 @media (max-width: 1100px) {
 .usuario-grid,
-.coach-grid {
+.coach-grid,
+.admin-grid {
 grid-template-columns: 1fr;
 grid-template-rows: auto;
 }
@@ -596,7 +677,10 @@ grid-template-rows: auto;
 .clases-tabla,
 .alumnos-panel,
 .coach-horario-panel,
-.coach-clases-panel {
+.coach-clases-panel,
+.usuarios-panel,
+.stats-panel,
+.control-panel {
 grid-column: auto;
 grid-row: auto;
 }
@@ -604,6 +688,10 @@ grid-row: auto;
 .fila-clase,
 .fila-horario {
 grid-template-columns: 1fr;
+}
+
+.control-panel {
+flex-direction: column;
 }
 }
 
@@ -626,8 +714,19 @@ padding: 16px;
 
 .progreso-contenido,
 .alumno-item,
-.clase-item {
+.clase-item,
+.usuario-item {
 flex-direction: column;
 align-items: flex-start;
+}
+
+.header-buttons {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.dashboard-logo {
+flex-direction: column;
+text-align: center;
 }
 }
