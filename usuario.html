@@ -7,62 +7,109 @@
 </head>
 <body class="usuario">
 
-<div class="container">
+<div class="dashboard-layout">
 
-<aside>
-<h2>SportClub</h2>
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Reservas</a>
-<a href="#">Perfil</a>
-</nav>
-</aside>
-
-<div class="contenido">
-
-<header>
-<div class="header-left">
-<img src="img/logo.png">
-<h2>Usuario</h2>
+<header class="dashboard-header">
+<div class="dashboard-logo">
+<img src="img/logo.png" alt="Logo SportClub">
+<h1>Dashboard Usuario</h1>
 </div>
-
-<div>
-<button>Editar perfil</button>
-<button>Cerrar sesión</button>
+<div class="header-buttons">
+<button>Editar Perfil</button>
+<button>Cerrar Sesión</button>
 </div>
 </header>
 
-<main class="grid">
+<nav class="dashboard-nav">
+<a href="#">Inicio</a>
+<a href="#">Clases</a>
+<a href="#">Reservas</a>
+<a href="#">Mi Progreso</a>
+</nav>
 
-<section class="card perfil">
+<main class="dashboard-main">
+<h2 class="dashboard-bienvenida">Bienvenido a SportClub</h2>
+
+<section class="usuario-grid">
+
+<div class="panel perfil-panel">
 <h3>Mi Perfil</h3>
-<p>Nombre: Juan Pérez</p>
-<p>Correo: juan@email.com</p>
-<p>Interés: Fitness</p>
-</section>
+<div class="perfil-top">
+<div class="perfil-avatar">
+<div class="avatar-circle"></div>
+</div>
+<div class="perfil-datos">
+<p><strong>Nombre:</strong></p>
+<div class="linea-campo"></div>
+<p><strong>Email:</strong></p>
+<div class="linea-campo"></div>
+</div>
+</div>
+<div class="perfil-objetivos">
+<p><strong>Objetivos Personales:</strong></p>
+<div class="linea-larga"></div>
+<div class="linea-larga"></div>
+<div class="linea-larga"></div>
+</div>
+</div>
 
-<section class="card progreso">
+<div class="panel progreso-panel">
 <h3>Progreso</h3>
-<div class="circle">75%</div>
-</section>
+<div class="progreso-contenido">
+<div class="progreso-circulo">
+<div class="circulo-externo">
+<div class="circulo-interno">Avance</div>
+</div>
+</div>
+<div class="progreso-info">
+<h4>Avance</h4>
+<div class="linea-corta"></div>
+<div class="linea-corta"></div>
+<div class="linea-corta"></div>
+<div class="linea-corta"></div>
+</div>
+</div>
+</div>
 
-<section class="card clases">
+<div class="panel clases-laterales">
 <h3>Clases Disponibles</h3>
-<p>Yoga <button>Reservar</button></p>
-<p>Funcional <button>Reservar</button></p>
-<p>Spinning <button>Reservar</button></p>
-</section>
+<div class="clase-item">
+<span>Spinning</span>
+<button>Reservar</button>
+</div>
+<div class="clase-item">
+<span>CrossFit</span>
+<button>Reservar</button>
+</div>
+<div class="clase-item">
+<span>Viernes</span>
+<button>Reservar</button>
+</div>
+</div>
 
-<section class="card tabla">
-<h3>Mis Reservas</h3>
-<p>Crossfit – Lunes 18:00</p>
-<p>Spinning – Miércoles 19:00</p>
-<p>Yoga – Viernes 17:00</p>
-</section>
+<div class="panel clases-tabla">
+<h3>Clases Disponibles</h3>
+<div class="tabla-clases">
+<div class="fila-clase">
+<span>Spinning</span>
+<span>Lunes / 18:00 / 10:00</span>
+<span>Boxeo</span>
+<span>Sábado</span>
+<button>Reservar</button>
+</div>
+<div class="fila-clase">
+<span>CrossFit</span>
+<span>Miércoles / 10:00</span>
+<span>HIIT</span>
+<span>10:00</span>
+<button>Reservar</button>
+</div>
+</div>
+</div>
 
+</section>
 </main>
 
-</div>
 </div>
 
 </body>
