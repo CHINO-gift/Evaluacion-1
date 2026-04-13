@@ -1,0 +1,5 @@
+Durante el desarrollo del proyecto utilicé herramientas de inteligencia artificial como apoyo en distintas etapas. Principalmente me ayudaron a organizar la estructura del sistema, entender mejor cómo dividir los módulos (login, registro, dashboards) y mejorar la presentación visual utilizando Bootstrap.
+
+A lo largo del proceso fui adaptando las sugerencias a mis propias ideas y a los requerimientos del proyecto, especialmente en el diseño basado en el boceto entregado. También hice ajustes manuales en el código para asegurar la coherencia visual entre las distintas páginas y corregir errores en la navegación.
+
+La IA fue utilizada como una guía de apoyo, pero todas las decisiones finales, modificaciones y pruebas fueron realizadas por mí para asegurar que el sistema funcionara correctamente y cumpliera con la rúbrica solicitada.
