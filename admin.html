@@ -32,7 +32,10 @@
 <div class="collapse navbar-collapse" id="menuAdmin">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link active" href="usuarios.html">Usuarios</a>
+<a class="nav-link active" href="admin.html">Inicio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="usuarios.html">Usuarios</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="reportes.html">Reportes</a>
@@ -50,43 +53,57 @@
 
 <div class="row g-4">
 
-<div class="col-lg-4">
+<div class="col-lg-5">
 <div class="card dashboard-card sketch-card h-100">
 <div class="card-body">
 <h3 class="h5 mb-3">Gestión de Usuarios</h3>
 
-<div class="d-flex justify-content-between border-bottom pb-2 mb-2">
-<span>Juan Pérez</span>
-<span class="text-muted">Usuario</span>
+<div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+<div>
+<strong>Juan Pérez</strong><br>
+<small class="text-muted">Usuario</small>
+</div>
+<button type="button" class="btn btn-gold btn-sm" onclick="location.href='usuarios.html'">Editar</button>
 </div>
 
-<div class="d-flex justify-content-between border-bottom pb-2 mb-2">
-<span>María Soto</span>
-<span class="text-muted">Coach</span>
+<div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+<div>
+<strong>María Soto</strong><br>
+<small class="text-muted">Coach</small>
+</div>
+<button type="button" class="btn btn-gold btn-sm" onclick="location.href='usuarios.html'">Editar</button>
 </div>
 
-<div class="d-flex justify-content-between">
-<span>Pedro Admin</span>
-<span class="text-muted">Administrador</span>
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<strong>Pedro Admin</strong><br>
+<small class="text-muted">Administrador</small>
+</div>
+<button type="button" class="btn btn-gold btn-sm" onclick="location.href='usuarios.html'">Editar</button>
 </div>
 
 </div>
 </div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-lg-3">
 <div class="card dashboard-card sketch-card h-100">
 <div class="card-body">
 <h3 class="h5 mb-3">Estadísticas</h3>
 
 <div class="bg-light rounded p-3 mb-3 text-center">
 <p class="mb-1">Total usuarios</p>
-<h2 class="mb-0">120</h2>
+<h2 class="mb-0">3</h2>
+</div>
+
+<div class="bg-light rounded p-3 mb-3 text-center">
+<p class="mb-1">Total clases</p>
+<h2 class="mb-0">2</h2>
 </div>
 
 <div class="bg-light rounded p-3 text-center">
-<p class="mb-1">Total clases</p>
-<h2 class="mb-0">25</h2>
+<p class="mb-1">Reservas registradas</p>
+<h2 class="mb-0">6</h2>
 </div>
 
 </div>
@@ -100,12 +117,17 @@
 
 <div class="bg-light rounded p-3 mb-3 text-center">
 <p class="mb-1">Usuarios activos</p>
-<h2 class="mb-0">80</h2>
+<h2 class="mb-0">3</h2>
+</div>
+
+<div class="bg-light rounded p-3 mb-3 text-center">
+<p class="mb-1">Clases del día</p>
+<h2 class="mb-0">2</h2>
 </div>
 
 <div class="bg-light rounded p-3 text-center">
-<p class="mb-1">Clases del día</p>
-<h2 class="mb-0">12</h2>
+<p class="mb-1">Estado del sistema</p>
+<h2 class="mb-0 text-success">Activo</h2>
 </div>
 
 </div>
