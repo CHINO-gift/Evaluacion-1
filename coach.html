@@ -13,7 +13,7 @@
 <div class="container-fluid">
 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
 <div class="d-flex align-items-center gap-3">
-<img src="img/logo.png" class="logo-img">
+<img src="img/logo.png" class="logo-img" alt="Logo SportClub">
 <h1 class="h3 mb-0">Coach</h1>
 </div>
 <div class="d-flex gap-2">
@@ -26,7 +26,7 @@
 
 <nav class="navbar navbar-expand-lg coach-nav navbar-dark">
 <div class="container-fluid">
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuCoach">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCoach">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="menuCoach">
@@ -53,18 +53,21 @@
 <div class="mb-3">
 <p class="mb-1"><strong>Juan Pérez</strong></p>
 <p class="small text-muted">juan@email.com</p>
+<p class="small mb-2">Clase: Spinning</p>
 <button class="btn btn-gold btn-sm" onclick="location.href='progreso.html'">Ver Progreso</button>
 </div>
 
 <div class="mb-3">
 <p class="mb-1"><strong>María Soto</strong></p>
 <p class="small text-muted">maria@email.com</p>
+<p class="small mb-2">Clase: CrossFit</p>
 <button class="btn btn-gold btn-sm" onclick="location.href='progreso.html'">Ver Progreso</button>
 </div>
 
 <div>
 <p class="mb-1"><strong>Carlos Díaz</strong></p>
 <p class="small text-muted">carlos@email.com</p>
+<p class="small mb-2">Clase: Spinning</p>
 <button class="btn btn-gold btn-sm" onclick="location.href='progreso.html'">Ver Progreso</button>
 </div>
 
@@ -79,7 +82,7 @@
 <h3 class="h5 mb-3">Mi Horario</h3>
 
 <div class="table-responsive">
-<table class="table text-center">
+<table class="table text-center align-middle">
 <thead>
 <tr>
 <th>Lunes</th>
@@ -87,22 +90,17 @@
 <th>Miércoles</th>
 <th>Jueves</th>
 <th>Viernes</th>
+<th>Sábado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Spinning 18:00</td>
-<td>Spinning 10:00</td>
-<td>CrossFit 11:00</td>
-<td>Boxeo</td>
-<td>Boxeo</td>
-</tr>
-<tr>
-<td>Miércoles 11:00</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>Spinning<br>10:30 - 11:30</td>
+<td>Spinning<br>13:30 - 14:30</td>
+<td>CrossFit<br>14:00 - 15:00</td>
+<td>CrossFit<br>13:30 - 14:30</td>
+<td>CrossFit<br>10:00 - 11:30</td>
+<td>Spinning<br>15:30 - 16:30</td>
 </tr>
 </tbody>
 </table>
@@ -117,17 +115,18 @@
 
 <div class="d-flex flex-column gap-3">
 <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
-<span>Funcional</span>
-<button class="btn btn-gold btn-sm" onclick="location.href='clases.html'">Ver Detalle</button>
+<div>
+<strong>Spinning</strong><br>
+<small class="text-muted">Lunes, Martes y Sábado</small>
 </div>
-
-<div class="d-flex justify-content-between align-items-center border-bottom pb-2">
-<span>Spinning</span>
 <button class="btn btn-gold btn-sm" onclick="location.href='clases.html'">Ver Detalle</button>
 </div>
 
 <div class="d-flex justify-content-between align-items-center">
-<span>Boxeo</span>
+<div>
+<strong>CrossFit</strong><br>
+<small class="text-muted">Miércoles, Jueves y Viernes</small>
+</div>
 <button class="btn btn-gold btn-sm" onclick="location.href='clases.html'">Ver Detalle</button>
 </div>
 </div>
